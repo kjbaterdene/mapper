@@ -1,48 +1,68 @@
-import random
-from routes import routes
+import math
 import pygame
 import os
 from stations import stations
 
+# Setup for Mercator Meter Mapping
+METERS_TOP = 4723671.7973
+METERS_BOTTOM = 4709564.8942
+METERS_LEFT = -10615542.1886
+METERS_RIGHT = -10589604.7236
+
+# Radius of the Earth in meters for Web Mercator math
+R_MAJOR = 6378137.0
+
+# --- 2. DISPLAY CONFIGURATION ---
 WIDTH, HEIGHT = 1920, 1080
-#os.environ['SDL_VIDEO_WINDOW_POS'] = f'-{WIDTH},0'
-os.environ['SDL_VIDEO_WINDOW_POS'] = f'0,-{HEIGHT}'
-
-pygame.init()
+MAP_X, MAP_Y = 0, 0
+MAP_W, MAP_H = 1438, 782
 
 
-
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Pixel Grid")
-clock = pygame.time.Clock()
-
-# Bounding box
-LAT_TOP = 39.007504945
-LAT_BOTTOM = 38.920453917
-LON_LEFT = -95.334342203
-LON_RIGHT = -95.172563635
-
-# Map position and size on screen
-MAP_X = 0        # pixels from left edge of screen
-MAP_Y = 0        # pixels from top edge of screen
-MAP_W = 1440     # width of map in pixels
-MAP_H = 775     # height of map in pixels
-
+# Function to convert GPS (Lat/Lon) to pixel coordinates on the Mercator map
 def gps_to_pixels(lat, lon):
-    x = MAP_X + (lon - LON_LEFT) / (LON_RIGHT - LON_LEFT) * MAP_W
-    y = MAP_Y + (LAT_TOP - lat) / (LAT_TOP - LAT_BOTTOM) * MAP_H
-    return (int(x), int(y))
+    x_m = R_MAJOR * math.radians(lon)
+    y_m = R_MAJOR * math.log(math.tan(math.pi / 4.0 + math.radians(lat) / 2.0))
+    
+    # Map those meters into your pixel workspace
+    pixel_x = MAP_X + (x_m - METERS_LEFT) / (METERS_RIGHT - METERS_LEFT) * MAP_W
+    pixel_y = MAP_Y + (METERS_TOP - y_m) / (METERS_TOP - METERS_BOTTOM) * MAP_H
+    
+    return (int(pixel_x), int(pixel_y))
 
-running = True
-print(gps_to_pixels(38.981319, -95.316411))
+
+
+# Pygame init
+pygame.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Mercator Meter Mapping")
+clock = pygame.time.Clock()
+font = pygame.font.SysFont('Arial', 20)
+
+# Load basemap (EPSG:3857 from QGIS)
 basemap = pygame.image.load("basemap.png")
+
+# Main loop
+running = True
 while running:
-    screen.blit(basemap, (0, 0))
-    for station_id in stations:
-        station = stations[station_id]
+    #screen.fill((255, 255, 255))
+    screen.blit(basemap, (MAP_X, MAP_Y))
+    
+    # Draw Stations using Lat/Lon
+    for station_id, station in stations.items():
         x, y = gps_to_pixels(station["lat"], station["lon"])
-        pygame.draw.circle(screen, (255, 0, 0), (x, y), 5)
+        
+        # Draw dot and label
+        pygame.draw.circle(screen, (255, 0, 0), (x, y), 6)
+        label = font.render(station_id, True, (0, 0, 0))
+        screen.blit(label, (x + 10, y - 10))
+    
     for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
         if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             running = False
+            
     pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()
