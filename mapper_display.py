@@ -30,5 +30,3 @@ while running:
         if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             running = False
     pygame.display.flip()
-
-```
