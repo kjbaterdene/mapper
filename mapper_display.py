@@ -2,9 +2,11 @@ import random
 from routes import routes
 import pygame
 import os
+from stations import stations
 
 WIDTH, HEIGHT = 1920, 1080
 #os.environ['SDL_VIDEO_WINDOW_POS'] = f'-{WIDTH},0'
+os.environ['SDL_VIDEO_WINDOW_POS'] = f'0,-{HEIGHT}'
 
 pygame.init()
 
@@ -31,14 +33,15 @@ def gps_to_pixels(lat, lon):
     y = MAP_Y + (LAT_TOP - lat) / (LAT_TOP - LAT_BOTTOM) * MAP_H
     return (int(x), int(y))
 
-x, y = gps_to_pixels(38.963779, -95.223527)
-
 running = True
 print(gps_to_pixels(38.981319, -95.316411))
 basemap = pygame.image.load("basemap.png")
 while running:
     screen.blit(basemap, (0, 0))
-    pygame.draw.circle(screen, (255, 0, 0), (x, y), 5)
+    for station_id in stations:
+        station = stations[station_id]
+        x, y = gps_to_pixels(station["lat"], station["lon"])
+        pygame.draw.circle(screen, (255, 0, 0), (x, y), 5)
     for event in pygame.event.get():
         if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
             running = False
