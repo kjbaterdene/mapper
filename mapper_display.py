@@ -3,8 +3,8 @@ from routes import routes
 import pygame
 import os
 
-WIDTH, HEIGHT = 2560, 1440
-os.environ['SDL_VIDEO_WINDOW_POS'] = f'-{WIDTH},0'
+WIDTH, HEIGHT = 1920, 1080
+#os.environ['SDL_VIDEO_WINDOW_POS'] = f'-{WIDTH},0'
 
 pygame.init()
 
@@ -15,17 +15,23 @@ pygame.display.set_caption("Pixel Grid")
 clock = pygame.time.Clock()
 
 # Bounding box
-LAT_TOP = 39.0037
-LAT_BOTTOM = 38.925210
-LON_LEFT = -95.3333
-LON_RIGHT = -95.177244
+LAT_TOP = 39.007504945
+LAT_BOTTOM = 38.920453917
+LON_LEFT = -95.334342203
+LON_RIGHT = -95.172563635
+
+# Map position and size on screen
+MAP_X = 0        # pixels from left edge of screen
+MAP_Y = 0        # pixels from top edge of screen
+MAP_W = 1440     # width of map in pixels
+MAP_H = 775     # height of map in pixels
 
 def gps_to_pixels(lat, lon):
-    x = (lon - LON_LEFT) / (LON_RIGHT - LON_LEFT) * WIDTH
-    y = (LAT_TOP - lat) / (LAT_TOP - LAT_BOTTOM) * HEIGHT
+    x = MAP_X + (lon - LON_LEFT) / (LON_RIGHT - LON_LEFT) * MAP_W
+    y = MAP_Y + (LAT_TOP - lat) / (LAT_TOP - LAT_BOTTOM) * MAP_H
     return (int(x), int(y))
 
-x, y = gps_to_pixels(38.942624, -95.307217)
+x, y = gps_to_pixels(38.963779, -95.223527)
 
 running = True
 print(gps_to_pixels(38.981319, -95.316411))
