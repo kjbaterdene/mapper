@@ -1,22 +1,26 @@
 import math
 import pygame
 import os
-from stations import stations
+import json
+from stops import stations
+
+# Routes Data
+ROUTES_DIR = "Static_Data/Routes"
 
 # Setup for Mercator Meter Mapping
-METERS_TOP = 4723671.7973
-METERS_BOTTOM = 4709564.8942
-METERS_LEFT = -10615542.1886
-METERS_RIGHT = -10589604.7236
+METERS_TOP = 4722541.43230000045150518
+METERS_BOTTOM = 4710777.48199999984353781
+METERS_LEFT = -10613259.2040999997407198
+METERS_RIGHT = -10595681.939899999648332
 
 # Radius of the Earth in meters for Web Mercator math
 R_MAJOR = 6378137.0
 
-# --- 2. DISPLAY CONFIGURATION ---
-WIDTH, HEIGHT = 1920, 1080
+# DISPLAY CONFIGURATION ---
+WIDTH, HEIGHT = 2560, 1440
 MAP_X, MAP_Y = 0, 0
-MAP_W, MAP_H = 1438, 782
-
+MAP_W, MAP_H = 2151, 1440
+os.environ['SDL_VIDEO_WINDOW_POS'] = f'-{WIDTH},0'
 
 # Function to convert GPS (Lat/Lon) to pixel coordinates on the Mercator map
 def gps_to_pixels(lat, lon):
@@ -39,7 +43,16 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont('Arial', 20)
 
 # Load basemap (EPSG:3857 from QGIS)
-basemap = pygame.image.load("basemap.png")
+basemap = pygame.image.load("Maps\Basemap.png")
+
+# Load routes data
+routes = {}
+for filename in os.listdir(ROUTES_DIR):
+    if filename.endswith(".geojson"):
+        route_id = filename.replace(".geojson", "")
+        with open(os.path.join(ROUTES_DIR, filename)) as f:
+            data = json.load(f)
+        routes[route_id] = data
 
 # Main loop
 running = True
@@ -52,9 +65,11 @@ while running:
         x, y = gps_to_pixels(station["lat"], station["lon"])
         
         # Draw dot and label
-        pygame.draw.circle(screen, (255, 0, 0), (x, y), 6)
+        pygame.draw.circle(screen, (255, 0, 0), (x, y), 3)
         label = font.render(station_id, True, (0, 0, 0))
-        screen.blit(label, (x + 10, y - 10))
+        #screen.blit(label, (x + 10, y - 10))
+
+
     
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
