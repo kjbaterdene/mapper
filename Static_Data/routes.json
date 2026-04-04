@@ -1,0 +1,1042 @@
+{
+    "routes": [
+        {
+            "alerts": [
+                {
+                    "active_periods": [
+                        {
+                            "end": 1780351200,
+                            "start": 1754945760
+                        }
+                    ],
+                    "created_at": 1769263620,
+                    "description": "Route 1 will not be able make the Harper-19th-Haskell loop due to construction. It will instead take 23rd all the way to HINU.",
+                    "effect": "DETOUR",
+                    "informed_entities": [
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:6289"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:6290"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:5863"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:5864"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:5346"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:6288"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:5865"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:6287"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:6291"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:5862"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:7125"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:7115"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:7114"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78118",
+                            "global_stop_id": "LTSKS:7126"
+                        }
+                    ],
+                    "severity": "Warning",
+                    "title": "Route 1 Detour-19th St construction"
+                }
+            ],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "1",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78118",
+            "mode_name": "Bus",
+            "real_time_route_id": "217",
+            "route_color": "a52821",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "1",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Downtown-East Hills",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "1",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "1",
+            "tts_long_name": "Downtown-East Hills",
+            "tts_short_name": "1",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [
+                {
+                    "active_periods": [
+                        {
+                            "end": 1776056400,
+                            "start": 1773311403
+                        }
+                    ],
+                    "created_at": 1775062500,
+                    "description": "Due to construction on Crestline. Stops #487Harvard/Crestline SB, #488 Harvard/Crestline NB, #489 Crestline/University, and # 499 Crestline/Cornish Sq will be closed.",
+                    "effect": "NO_SERVICE",
+                    "informed_entities": [
+                        {
+                            "global_route_id": "LTSKS:267917",
+                            "global_stop_id": "LTSKS:6997"
+                        },
+                        {
+                            "global_route_id": "LTSKS:267917",
+                            "global_stop_id": "LTSKS:6982"
+                        },
+                        {
+                            "global_route_id": "LTSKS:267917",
+                            "global_stop_id": "LTSKS:6981"
+                        },
+                        {
+                            "global_route_id": "LTSKS:267917",
+                            "global_stop_id": "LTSKS:6998"
+                        }
+                    ],
+                    "severity": "Severe",
+                    "title": "Modified service"
+                }
+            ],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "2",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:267917",
+            "mode_name": "Bus",
+            "real_time_route_id": "123424",
+            "route_color": "0092d7",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "2",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Central Station-Lakeview Road via LMH",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "2",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "2",
+            "tts_long_name": "Central Station-Lakeview Road via LMH",
+            "tts_short_name": "2",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [
+                {
+                    "active_periods": [
+                        {
+                            "end": 1785474000,
+                            "start": 1764590411
+                        }
+                    ],
+                    "created_at": 1769263620,
+                    "description": "Due to construction, Route 3 will not be run its regular route on 9th St.\n\nNorthbound Route 3 heading Eastbound on 9th St will take a left on Ohio St., a right on 11th St., a right on Mississippi St., a left on 9th St. and back on its regular route. Stops #208-9th & Ohio and #209-9th & Mississippi will be closed. A temporary stop will be placed on Ohio St. South of 9th St. near Great Harvest and on 9th St. near Rick's Place (across from Burrito King).\n\nSouthbound Route 3 heading Westbound on 9th will take a right on Mississippi St., left on 11th St., left on Ohio St., a right on 9th St. and back on its regular route. Stop #343-9th & Mississippi will be closed. A temporary stop will be placed on 9th St. near Mississippi (by Cork & Barrel).",
+                    "effect": "DETOUR",
+                    "informed_entities": [
+                        {
+                            "global_route_id": "LTSKS:78119",
+                            "global_stop_id": "LTSKS:7271"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78119",
+                            "global_stop_id": "LTSKS:7273"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78119",
+                            "global_stop_id": "LTSKS:7274"
+                        }
+                    ],
+                    "severity": "Warning",
+                    "title": "9th St Detour"
+                }
+            ],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "3",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78119",
+            "mode_name": "Bus",
+            "real_time_route_id": "225",
+            "route_color": "f7941d",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "3",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Downtown-Lakeview Road via LMH",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "3",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "3",
+            "tts_long_name": "Downtown-Lakeview Road via LMH",
+            "tts_short_name": "3",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [
+                {
+                    "active_periods": [
+                        {
+                            "end": 1780290000,
+                            "start": 1765213010
+                        }
+                    ],
+                    "created_at": 1769263620,
+                    "description": "Eastbound Stops #174 Bob Billings @ Quail Pointe, #75 Bob Billings @ Monterey Way, #90 Bob Billings @ St. Andrews will be closed during construction. Please Utilize Westbound stops.",
+                    "effect": "MODIFIED_SERVICE",
+                    "informed_entities": [
+                        {
+                            "global_route_id": "LTSKS:78120",
+                            "global_stop_id": "LTSKS:7216"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78120",
+                            "global_stop_id": "LTSKS:7217"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78120",
+                            "global_stop_id": "LTSKS:7218"
+                        }
+                    ],
+                    "severity": "Info",
+                    "title": "Due to construction on Bob Billings, Route 4 can expect delays."
+                }
+            ],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "4",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78120",
+            "mode_name": "Bus",
+            "real_time_route_id": "232",
+            "route_color": "49c0b6",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "4",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Wakarusa / 6th-Dtwn via Central Sta & KU",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "4",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "4",
+            "tts_long_name": "Wakarusa / 6th-Dtwn via Central Sta & KU",
+            "tts_short_name": "4",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "5",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78121",
+            "mode_name": "Bus",
+            "real_time_route_id": "233",
+            "route_color": "00828a",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "5",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Central Station-East Hills via HINU",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "5",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "5",
+            "tts_long_name": "Central Station-East Hills via HINU",
+            "tts_short_name": "5",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [
+                {
+                    "active_periods": [
+                        {
+                            "end": 1780894800,
+                            "start": 1767802759
+                        }
+                    ],
+                    "created_at": 1769263620,
+                    "description": "Stops #188 6th & Frontier and #341 6th & Gateway will be closed due to construction. A temporary stop will be placed just east of 6th & Kasold near the entrance to U.S. Bank.",
+                    "effect": "MODIFIED_SERVICE",
+                    "informed_entities": [
+                        {
+                            "global_route_id": "LTSKS:78122",
+                            "global_stop_id": "LTSKS:6429"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78122",
+                            "global_stop_id": "LTSKS:7083"
+                        }
+                    ],
+                    "severity": "Info",
+                    "title": "Modified service"
+                }
+            ],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "6",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78122",
+            "mode_name": "Bus",
+            "real_time_route_id": "234",
+            "route_color": "195177",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "6",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Rock Chalk Park-N Lawrence via Downtown",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "6",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "6",
+            "tts_long_name": "Rock Chalk Park-N Lawrence via Downtown",
+            "tts_short_name": "6",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "7",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78123",
+            "mode_name": "Bus",
+            "real_time_route_id": "235",
+            "route_color": "a7be39",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "7",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Downtown-South Iowa",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "7",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "7",
+            "tts_long_name": "Downtown-South Iowa",
+            "tts_short_name": "7",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "8",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:267916",
+            "mode_name": "Bus",
+            "real_time_route_id": "218",
+            "route_color": "bca6d0",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "8",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Central Sta-Peaslee Tech via KU / HINU",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "8",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "8",
+            "tts_long_name": "Central Sta-Peaslee Tech via KU / HINU",
+            "tts_short_name": "8",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "9",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78124",
+            "mode_name": "Bus",
+            "real_time_route_id": "236",
+            "route_color": "8e6325",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "9",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "South Iowa-27th / Wakarusa",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "9",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "9",
+            "tts_long_name": "South Iowa-27th / Wakarusa",
+            "tts_short_name": "9",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "11",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78126",
+            "mode_name": "Bus",
+            "real_time_route_id": "215",
+            "route_color": "7bd3f7",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "11",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Central Station-31st / Iowa via KU",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "11",
+            "route_text_color": "000000",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "11",
+            "tts_long_name": "Central Station-31st / Iowa via KU",
+            "tts_short_name": "11",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "12",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:217160",
+            "mode_name": "Bus",
+            "real_time_route_id": "219",
+            "route_color": "f7b7d3",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "12",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Central Station-27th / Wakarusa",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "12",
+            "route_text_color": "000000",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "12",
+            "tts_long_name": "Central Station-27th / Wakarusa",
+            "tts_short_name": "12",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "30",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78130",
+            "mode_name": "Bus",
+            "real_time_route_id": "221",
+            "route_color": "ec008c",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "30",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Bob Billings / Crestline-KU",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "30",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "30",
+            "tts_long_name": "Bob Billings / Crestline-KU",
+            "tts_short_name": "30",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "34",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:121702",
+            "mode_name": "Bus",
+            "real_time_route_id": "222",
+            "route_color": "fdb515",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "34",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "7th St-KU",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "34",
+            "route_text_color": "000000",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "34",
+            "tts_long_name": "7th St-KU",
+            "tts_short_name": "34",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [
+                {
+                    "active_periods": [
+                        {
+                            "end": 1779858000,
+                            "start": 1772828631
+                        }
+                    ],
+                    "created_at": 1772829600,
+                    "description": "Stop #275 Frontier & Trail will be closed due to a reroute. A temp stop will be placed on the Northwest corner of Frontier & Trail",
+                    "effect": "MODIFIED_SERVICE",
+                    "informed_entities": [
+                        {
+                            "global_route_id": "LTSKS:78131",
+                            "global_stop_id": "LTSKS:6188"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78131",
+                            "global_stop_id": "LTSKS:6368"
+                        }
+                    ],
+                    "severity": "Info",
+                    "title": "Modified service"
+                }
+            ],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "36",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78131",
+            "mode_name": "Bus",
+            "real_time_route_id": "223",
+            "route_color": "3a9948",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "36",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "6th / Kasold-KU via Emery Road",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "36",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "36",
+            "tts_long_name": "6th / Kasold-KU via Emery Road",
+            "tts_short_name": "36",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [
+                {
+                    "active_periods": [
+                        {
+                            "end": 1775797200,
+                            "start": 1773071258
+                        }
+                    ],
+                    "created_at": 1774967400,
+                    "description": "Due to construction, the bus stops on Stewart Ave will be closed. Please use stops on 19th St to access Route 38.",
+                    "effect": "MODIFIED_SERVICE",
+                    "informed_entities": [
+                        {
+                            "global_route_id": "LTSKS:78132",
+                            "global_stop_id": "LTSKS:6378"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78132",
+                            "global_stop_id": "LTSKS:6379"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78132",
+                            "global_stop_id": "LTSKS:5566"
+                        },
+                        {
+                            "global_route_id": "LTSKS:78132",
+                            "global_stop_id": "LTSKS:5567"
+                        }
+                    ],
+                    "severity": "Info",
+                    "title": "Modified service-Stops on Stewart closed."
+                }
+            ],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "38",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78132",
+            "mode_name": "Bus",
+            "real_time_route_id": "224",
+            "route_color": "903f98",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "38",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "31st St-KU",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "38",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "38",
+            "tts_long_name": "31st St-KU",
+            "tts_short_name": "38",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "42",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78134",
+            "mode_name": "Bus",
+            "real_time_route_id": "228",
+            "route_color": "0066af",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "42",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Blue Circulator via Rec Center",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "42",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "42",
+            "tts_long_name": "Blue Circulator via Rec Center",
+            "tts_short_name": "42",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "43",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:78135",
+            "mode_name": "Bus",
+            "real_time_route_id": "229",
+            "route_color": "e11837",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "43",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Red Circulator",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "43",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "43",
+            "tts_long_name": "Red Circulator",
+            "tts_short_name": "43",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "44",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:112846",
+            "mode_name": "Bus",
+            "real_time_route_id": "230",
+            "route_color": "58595b",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "44",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "Evening Campus Circulator",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "44",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "44",
+            "tts_long_name": "Evening Campus Circulator",
+            "tts_short_name": "44",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        },
+        {
+            "alerts": [],
+            "compact_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "53",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "fares": [],
+            "global_route_id": "LTSKS:217159",
+            "mode_name": "Bus",
+            "real_time_route_id": "113087",
+            "route_color": "000000",
+            "route_display_short_name": {
+                "boxed_text": "",
+                "elements": [
+                    null,
+                    "53",
+                    null
+                ],
+                "route_name_redundancy": false
+            },
+            "route_image": "",
+            "route_long_name": "SafeBus Night Circulator",
+            "route_network_id": "Lawrence Transit|Kansas City",
+            "route_network_name": "Lawrence Transit",
+            "route_short_name": "53",
+            "route_text_color": "ffffff",
+            "route_timezone": "America/Chicago",
+            "route_type": 3,
+            "sorting_key": "53",
+            "tts_long_name": "SafeBus Night Circulator",
+            "tts_short_name": "53",
+            "vehicle": {
+                "image": "bus-new",
+                "name": "bus",
+                "name_inflection": "n"
+            }
+        }
+    ]
+}

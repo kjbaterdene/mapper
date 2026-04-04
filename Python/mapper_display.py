@@ -43,7 +43,7 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont('Arial', 20)
 
 # Load basemap (EPSG:3857 from QGIS)
-basemap = pygame.image.load("Maps\Basemap.png")
+basemap = pygame.image.load("Maps/Basemap.png")
 
 # Load routes data
 routes = {}
